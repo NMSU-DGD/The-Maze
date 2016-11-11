@@ -12,3 +12,7 @@
 /Users/Sultan/The-Maze/Project/Maze/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/Sultan/The-Maze/Project/Maze/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/Sultan/The-Maze/Project/Maze/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/Sultan/The-Maze/Project/Maze/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/Sultan/The-Maze/Project/Maze/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/Sultan/The-Maze/Project/Maze/obj/Debug/Assembly-CSharp.dll
+/Users/Sultan/The-Maze/Project/Maze/obj/Debug/Assembly-CSharp.dll.mdb

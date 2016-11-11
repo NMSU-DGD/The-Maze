@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\DoorButtonScript.cs" />
      <Compile Include="Assets\Scripts\DrawLine.cs" />
      <Compile Include="Assets\Scripts\DrawRectangle.cs" />
+     <Compile Include="Assets\Scripts\EnterMinimap.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\ItemData.cs" />
      <Compile Include="Assets\Scripts\ItemDatabase.cs" />

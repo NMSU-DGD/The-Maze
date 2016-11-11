@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 public class DrawLine : MonoBehaviour {
 
@@ -8,6 +9,7 @@ public class DrawLine : MonoBehaviour {
 	private bool isMousePressed;
 	public List<Vector3> pointsList;
 	private Vector3 mousePos;
+	private Vector2 _offset;
 
 	// Structure for line points
 	struct myLine
@@ -25,15 +27,19 @@ public class DrawLine : MonoBehaviour {
 		line.SetWidth (0.1f, 0.1f);
 		line.SetColors (Color.green, Color.green);
 		line.useWorldSpace = true;    
-		isMousePressed = false;
+		isMousePressed = true;
 		pointsList = new List<Vector3> ();
 		//        renderer.material.SetTextureOffset(
 	}
-	//    -----------------------------------    
+	//    -----------------------------------  
+
 	void Update ()
 	{
+		//this.transform.position(pare
 		// If mouse button down, remove old line and set its color to green
 		if (Input.GetMouseButtonDown (0)) {
+//			_offset = eventData.position - new Vector2 (this.transform.position.x, this.transform.position.y);
+//			this.transform.position = eventData.position - _offset;
 			isMousePressed = true;
 			line.SetVertexCount (0);
 			pointsList.RemoveRange (0, pointsList.Count);
@@ -44,7 +50,8 @@ public class DrawLine : MonoBehaviour {
 		}
 		// Drawing line when mouse is moving(presses)
 		if (isMousePressed) {
-			mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			//mousePos = GameObject.Find("Planningmap") (Input.mousePosition);
 			mousePos.z = 0;
 			if (!pointsList.Contains (mousePos)) {
 				pointsList.Add (mousePos);
