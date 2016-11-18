@@ -2,8 +2,9 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 using System;
+using UnityEngine.Networking;
 
-public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
+public class ItemData : NetworkBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Item item;
     public int slot;

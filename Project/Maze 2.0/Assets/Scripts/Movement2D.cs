@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Movement2D : MonoBehaviour
+public class Movement2D : NetworkBehaviour
 {
 
 	public enum ShapeMode { Circle, Box }

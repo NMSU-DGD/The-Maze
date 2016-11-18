@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\KeyDoorScript.cs" />
      <Compile Include="Assets\Scripts\KeyPadSystem.cs" />
      <Compile Include="Assets\Scripts\Movement2D.cs" />
+     <Compile Include="Assets\Scripts\OverriddenNetworkDiscovery.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Rotateplayer.cs" />
      <Compile Include="Assets\Scripts\SampleMove2D.cs" />
@@ -78,7 +79,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>/Users/ahmedkhalaf/The-Maze/Project/Maze 2.0/Assets/Plugins/LitJson.dll</HintPath>
+ <HintPath>/Users/Sultan/The-Maze/Project/Maze 2.0/Assets/Plugins/LitJson.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,7 +3,9 @@ using System.Collections;
 using LitJson;
 using System.Collections.Generic;
 using System.IO;
-public class ItemDatabase : MonoBehaviour {
+using UnityEngine.Networking;
+
+public class ItemDatabase : NetworkBehaviour {
     private List<Item> database = new List<Item>();
     private JsonData itemData;
 	// Use this for initialization

@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class SampleMove2D : MonoBehaviour
+public class SampleMove2D : NetworkBehaviour
 {
     public float Distance = 0;
 

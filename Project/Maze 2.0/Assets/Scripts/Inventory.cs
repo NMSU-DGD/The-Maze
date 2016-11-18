@@ -2,8 +2,9 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Networking;
 
-public class Inventory : MonoBehaviour 
+public class Inventory : NetworkBehaviour 
 {
 	ItemDatabase database;
 	GameObject inventoryPanel;
