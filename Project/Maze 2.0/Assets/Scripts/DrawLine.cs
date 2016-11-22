@@ -36,45 +36,48 @@ public class DrawLine : MonoBehaviour {
 
 	void Update ()
 	{
-		//this.transform.position(pare
-		// If mouse button down, remove old line and set its color to green
-		if (Input.GetMouseButtonDown (0)) {
-			//			_offset = eventData.position - new Vector2 (this.transform.position.x, this.transform.position.y);
-			//			this.transform.position = eventData.position - _offset;
-			isMousePressed = true;
-			line.SetVertexCount (0);
-			//pointsList.RemoveRange (0, pointsList.Count);
-			line.SetColors (Color.green, Color.green);
-		}
+		if (GameObject.Find ("Planningmap").GetComponent<Camera> ().enabled == true) {
 
-		if (Input.GetMouseButtonUp (0)) {
-			Debug.Log("mouseup");
-			isMousePressed = false;
-			line.SetColors (Color.red, Color.red);
-		}
+			//this.transform.position(pare
+			// If mouse button down, remove old line and set its color to green
+			if (Input.GetMouseButtonDown (0)) {
+				//			_offset = eventData.position - new Vector2 (this.transform.position.x, this.transform.position.y);
+				//			this.transform.position = eventData.position - _offset;
+				isMousePressed = true;
+				line.SetVertexCount (0);
+				//pointsList.RemoveRange (0, pointsList.Count);
+				line.SetColors (Color.green, Color.green);
+			}
 
-		if (Input.GetMouseButtonDown (1)) {
-			line.SetVertexCount (0);
-			Debug.Log("right click");
-			pointsList.RemoveRange (0, pointsList.Count);
-		}
+			if (Input.GetMouseButtonUp (0)) {
+				Debug.Log ("mouseup");
+				isMousePressed = false;
+				line.SetColors (Color.red, Color.red);
+			}
+
+			if (Input.GetMouseButtonDown (1)) {
+				line.SetVertexCount (0);
+				Debug.Log ("right click");
+				pointsList.RemoveRange (0, pointsList.Count);
+			}
 
 		// Drawing line when mouse is moving(presses)
 		else if (isMousePressed) {
-			mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			//mousePos = GameObject.FindWithTag("Planningmap")
-			//mousePos = GameObject.Find("Planningmap") (Input.mousePosition);
-			mousePos.z = -2;
-			//mousePos.x = 1;
-			//mousePos.y = 1;
-			if (!pointsList.Contains (mousePos)) {
-				pointsList.Add (mousePos);
-				line.SetVertexCount (pointsList.Count);
-				line.SetPosition (pointsList.Count - 1, (Vector3)pointsList [pointsList.Count - 1]);
-				//				if (isLineCollide ()) {
-				//					isMousePressed = false;
-				//					line.SetColors (Color.red, Color.red);
-				//				}
+				mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+				//mousePos = GameObject.FindWithTag("Planningmap")
+				//mousePos = GameObject.Find("Planningmap") (Input.mousePosition);
+				mousePos.z = -2;
+				//mousePos.x = 1;
+				//mousePos.y = 1;
+				if (!pointsList.Contains (mousePos)) {
+					pointsList.Add (mousePos);
+					line.SetVertexCount (pointsList.Count);
+					line.SetPosition (pointsList.Count - 1, (Vector3)pointsList [pointsList.Count - 1]);
+					//				if (isLineCollide ()) {
+					//					isMousePressed = false;
+					//					line.SetColors (Color.red, Color.red);
+					//				}
+				}
 			}
 		}
 	}
