@@ -28,7 +28,7 @@ public class DrawLine : MonoBehaviour {
 		line.SetWidth (0.1f, 0.1f);
 		line.SetColors (Color.green, Color.green);
 		line.useWorldSpace = true;
-		isMousePressed = true;
+		isMousePressed = false;
 		pointsList = new List<Vector3> ();
 		//        renderer.material.SetTextureOffset(
 	}
@@ -36,10 +36,16 @@ public class DrawLine : MonoBehaviour {
 
 	void Update ()
 	{
+		
 		if (GameObject.Find ("Planningmap").GetComponent<Camera> ().enabled == true) {
-
 			//this.transform.position(pare
 			// If mouse button down, remove old line and set its color to green
+			if (Input.GetMouseButtonUp (0)) {
+				Debug.Log ("mouseup");
+				isMousePressed = false;
+				line.SetColors (Color.red, Color.red);
+			}
+
 			if (Input.GetMouseButtonDown (0)) {
 				//			_offset = eventData.position - new Vector2 (this.transform.position.x, this.transform.position.y);
 				//			this.transform.position = eventData.position - _offset;
@@ -49,12 +55,6 @@ public class DrawLine : MonoBehaviour {
 				line.SetColors (Color.green, Color.green);
 			}
 
-			if (Input.GetMouseButtonUp (0)) {
-				Debug.Log ("mouseup");
-				isMousePressed = false;
-				line.SetColors (Color.red, Color.red);
-			}
-
 			if (Input.GetMouseButtonDown (1)) {
 				line.SetVertexCount (0);
 				Debug.Log ("right click");
@@ -62,14 +62,14 @@ public class DrawLine : MonoBehaviour {
 			}
 
 		// Drawing line when mouse is moving(presses)
-		else if (isMousePressed) {
-				mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+		 if (isMousePressed) {
+				mousePos = Camera.current.ScreenToWorldPoint (Input.mousePosition);
 				//mousePos = GameObject.FindWithTag("Planningmap")
 				//mousePos = GameObject.Find("Planningmap") (Input.mousePosition);
 				mousePos.z = -2;
 				//mousePos.x = 1;
 				//mousePos.y = 1;
-				if (!pointsList.Contains (mousePos)) {
+				//if (!pointsList.Contains (mousePos)) {
 					pointsList.Add (mousePos);
 					line.SetVertexCount (pointsList.Count);
 					line.SetPosition (pointsList.Count - 1, (Vector3)pointsList [pointsList.Count - 1]);
@@ -77,7 +77,7 @@ public class DrawLine : MonoBehaviour {
 					//					isMousePressed = false;
 					//					line.SetColors (Color.red, Color.red);
 					//				}
-				}
+				//}
 			}
 		}
 	}
