@@ -21,9 +21,7 @@ public class EnterMinimap : MonoBehaviour {
 				//GameObject.Find ("Main Camera").GetComponent<Camera> ().transform.localScale = temp2;
 				GameObject.Find("Planningmap").GetComponent<Camera>().enabled = true;
 			}
-
 		}
-
 	}
 
 	void OnTriggerExit2D(Collider2D otherCollider)
@@ -41,8 +39,6 @@ public class EnterMinimap : MonoBehaviour {
 				//GameObject.Find("Main Camera").GetComponent<Camera>().enabled = true;
 				GameObject.Find("Planningmap").GetComponent<Camera>().enabled = false;
 			}
-
 		}
-
 	}
 }
