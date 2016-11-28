@@ -1,7 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{558CC709-7D14-546E-9B63-B46EC1749735}") = "Maze 2.0", "Assembly-CSharp.csproj", "{1E6FD692-C93D-79C8-2EE1-3BA957F5F57D}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maze 2.0.CSharp", "Maze 2.0.CSharp.csproj", "{E554DC4E-10D7-290D-B58F-8AC2821E15C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1E6FD692-C93D-79C8-2EE1-3BA957F5F57D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E6FD692-C93D-79C8-2EE1-3BA957F5F57D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E6FD692-C93D-79C8-2EE1-3BA957F5F57D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E6FD692-C93D-79C8-2EE1-3BA957F5F57D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E554DC4E-10D7-290D-B58F-8AC2821E15C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E554DC4E-10D7-290D-B58F-8AC2821E15C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E554DC4E-10D7-290D-B58F-8AC2821E15C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E554DC4E-10D7-290D-B58F-8AC2821E15C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
