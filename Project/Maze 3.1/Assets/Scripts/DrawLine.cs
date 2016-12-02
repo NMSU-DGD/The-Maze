@@ -7,7 +7,7 @@ public class DrawLine : MonoBehaviour {
 
 	private LineRenderer line;
 	private bool isMousePressed;
-
+	private Color color;
 	public List<Vector3> pointsList;
 	private Vector3 mousePos;
 	private Vector2 _offset;
@@ -27,6 +27,7 @@ public class DrawLine : MonoBehaviour {
 		line.SetVertexCount (0);
 		line.SetWidth (0.1f, 0.1f);
 		line.SetColors (Color.green, Color.green);
+
 		line.useWorldSpace = true;
 		isMousePressed = false;
 		pointsList = new List<Vector3> ();

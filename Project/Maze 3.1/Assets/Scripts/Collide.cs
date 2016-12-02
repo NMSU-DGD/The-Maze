@@ -12,7 +12,8 @@ public class Collide : MonoBehaviour {
 	// Use this for initialization
 	void OnTriggerEnter2D(Collider2D otherCollider)
 	{
-		Movement2D player = otherCollider.gameObject.GetComponent<Movement2D> ();
+		PlayerMovement player = otherCollider.gameObject.GetComponent<PlayerMovement>();
+		PlayerMovement02 player2 = gameObject.GetComponent<PlayerMovement02> ();
 			Debug.Log("ok");
 			KeyPad.active = true;
 	}
@@ -20,9 +21,11 @@ public class Collide : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D otherCollider)
 	{
 		string keyName = gameObject.name;
-		Movement2D player = otherCollider.gameObject.GetComponent<Movement2D>();
-		if (player != null) {
-			if (keyName == "t")
+		PlayerMovement player = otherCollider.gameObject.GetComponent<PlayerMovement>();
+		PlayerMovement02 player2 = gameObject.GetComponent<PlayerMovement02> ();
+		KeyPad.active = false;
+		if (player != null || player2 != null) {
+			if (keyName == "t(1)")
 			{
 				KeyPad.active = false;
 				//Vector3 temp2 = new Vector3(2.27f,2.28f,0.5f);

@@ -26,7 +26,8 @@ public class Activate : MonoBehaviour {
 		if (Code.text == "5") {//cheking if typing count number is correct
 
 			Debug.Log ("Correct");
-			Movement2D player = gameObject.GetComponent<Movement2D> ();
+			PlayerMovement player = gameObject.GetComponent<PlayerMovement> ();
+			PlayerMovement02 player2 = gameObject.GetComponent<PlayerMovement02> ();
 			Debug.Log("ok");
 			Destroy(GameObject.FindWithTag("Door1"));
 			Destroy(GameObject.FindWithTag("Keypad"));
