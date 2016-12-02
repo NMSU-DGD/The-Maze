@@ -15,8 +15,9 @@ public class CollectingInfo : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
         string infoName = gameObject.name;
-        Movement2D avatar = otherCollider.gameObject.GetComponent<Movement2D>();
-        if (avatar != null)
+		PlayerMovement avatar = otherCollider.gameObject.GetComponent<PlayerMovement>();
+		PlayerMovement02 avater2 = otherCollider.gameObject.GetComponent<PlayerMovement02>();
+		if (avatar != null || avater2)
         {
             if(infoName == "info1")
             {
