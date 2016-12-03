@@ -21,6 +21,7 @@ public class EnterMinimap : MonoBehaviour {
 				GameObject.Find ("Main Camera 02").GetComponent<Camera> ().transform.position += temp;
 				//GameObject.Find ("Main Camera").GetComponent<Camera> ().transform.localScale = temp2;
 				GameObject.Find("Planningmap").GetComponent<Camera>().enabled = true;
+
 			}
 		}
 		SimpleMove2D2 player2 = otherCollider.gameObject.GetComponent<SimpleMove2D2>();

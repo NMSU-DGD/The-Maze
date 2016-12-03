@@ -24,7 +24,8 @@ public class Activate : MonoBehaviour {
 	public void OnMouseDown()
 	{
 		if (Code.text == "5") {//cheking if typing count number is correct
-
+			GameObject.Find("BlackCover01").GetComponent<SpriteRenderer>().enabled = false;
+			GameObject.Find("Lock01").GetComponent<SpriteRenderer>().enabled = false;
 			Debug.Log ("Correct");
 			PlayerMovement player = gameObject.GetComponent<PlayerMovement> ();
 			PlayerMovement02 player2 = gameObject.GetComponent<PlayerMovement02> ();
