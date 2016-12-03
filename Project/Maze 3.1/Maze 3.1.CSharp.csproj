@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scripts\SimpleMove2D2.cs" />
     <Compile Include="Assets\Scripts\Slot.cs" />
     <Compile Include="Assets\Scripts\SlotKey.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\Tooltip.cs" />
     <Compile Include="Assets\Scripts\UsingKey.cs" />
     <Compile Include="Assets\Scripts\UsingKey2.cs" />
