@@ -59,11 +59,15 @@
      <Compile Include="Assets\Scripts\ItemData.cs" />
      <Compile Include="Assets\Scripts\ItemDatabase.cs" />
      <Compile Include="Assets\Scripts\Key.cs" />
+     <Compile Include="Assets\Scripts\Key2.cs" />
+     <Compile Include="Assets\Scripts\Key3.cs" />
      <Compile Include="Assets\Scripts\KeyCounterScript.cs" />
      <Compile Include="Assets\Scripts\KeyData.cs" />
      <Compile Include="Assets\Scripts\KeyDoorScript.cs" />
      <Compile Include="Assets\Scripts\KeyPadSystem.cs" />
      <Compile Include="Assets\Scripts\MoveKey.cs" />
+     <Compile Include="Assets\Scripts\MoveKey2.cs" />
+     <Compile Include="Assets\Scripts\MoveKey3.cs" />
      <Compile Include="Assets\Scripts\Movement2D.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
@@ -74,8 +78,11 @@
      <Compile Include="Assets\Scripts\SimpleMove2D2.cs" />
      <Compile Include="Assets\Scripts\Slot.cs" />
      <Compile Include="Assets\Scripts\SlotKey.cs" />
+     <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\Tooltip.cs" />
      <Compile Include="Assets\Scripts\UsingKey.cs" />
+     <Compile Include="Assets\Scripts\UsingKey2.cs" />
+     <Compile Include="Assets\Scripts\UsingKey3.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
@@ -83,7 +90,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>/Users/torresruth/The-Maze/Project/Maze 3.1/Assets/Plugins/LitJson.dll</HintPath>
+ <HintPath>/Users/Sultan/The-Maze/Project/Maze 3.1/Assets/Plugins/LitJson.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
