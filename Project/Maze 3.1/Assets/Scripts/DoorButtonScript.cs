@@ -22,8 +22,8 @@ public class DoorButtonScript : MonoBehaviour {
 			}
 			if (keyName == "DoorButton02")
 			{
-				GameObject.Find("ButtonDoor").GetComponent<MeshRenderer>().enabled = false;
-				GameObject.Find("ButtonDoor").GetComponent<BoxCollider2D>().enabled = false;
+				GameObject.Find("ButtonDoor02").GetComponent<MeshRenderer>().enabled = false;
+				GameObject.Find("ButtonDoor02").GetComponent<BoxCollider2D>().enabled = false;
 			}
 
 		}
@@ -44,8 +44,8 @@ public class DoorButtonScript : MonoBehaviour {
 			}
 			if (keyName == "DoorButton02")
 			{
-				GameObject.Find("ButtonDoor").GetComponent<MeshRenderer>().enabled = true;
-				GameObject.Find("ButtonDoor").GetComponent<BoxCollider2D>().enabled = true;
+				GameObject.Find("ButtonDoor02").GetComponent<MeshRenderer>().enabled = true;
+				GameObject.Find("ButtonDoor02").GetComponent<BoxCollider2D>().enabled = true;
 			}
 
 		}

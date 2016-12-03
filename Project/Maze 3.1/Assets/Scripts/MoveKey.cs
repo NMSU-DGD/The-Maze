@@ -9,10 +9,11 @@ public class MoveKey : MonoBehaviour {
 	GameObject theAvatar2;
 	public static bool MovingTheKey = false;
 	public static bool MovingTheKey2 = false;
-	// Use this for initialization
 
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+
+    // Update is called once per frame
+    void Update () {
 
 		theAvatar = GameObject.FindGameObjectWithTag ("player1");
 		theAvatar2 = GameObject.FindGameObjectWithTag ("player2");
@@ -35,7 +36,5 @@ public class MoveKey : MonoBehaviour {
 			this.gameObject.transform.position = new Vector3(avaPos2.x, avaPos2.y*1.03f, avaPos2.z);
 			this.gameObject.transform.rotation = theAvatar2.transform.rotation;
 		}
-
-
-	}
+    }
 }
