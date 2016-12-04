@@ -38,9 +38,9 @@ public class DrawLine : MonoBehaviour {
 		
 		if (GameObject.Find ("Planningmap").GetComponent<Camera> ().enabled == true) {
 			//if (Input.GetKeyDown (KeyCode.Backspace)) {
-				Debug.Log ("in ");
+				//Debug.Log ("in ");
 				if (Input.GetMouseButtonUp (0)) {
-					Debug.Log ("mouseup");
+					//Debug.Log ("mouseup");
 					isMousePressed = false;
 					line.SetColors (Color.red, Color.red);
 				}
@@ -53,7 +53,7 @@ public class DrawLine : MonoBehaviour {
 
 				if (Input.GetMouseButtonDown (1)) {
 					line.SetVertexCount (0);
-					Debug.Log ("right click");
+					//Debug.Log ("right click");
 					pointsList.RemoveRange (0, pointsList.Count);
 				}
 					

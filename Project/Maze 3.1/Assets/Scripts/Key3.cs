@@ -14,7 +14,7 @@ public class Key3 : MonoBehaviour
         {
           //  if (keyName == "Triangle")
           //  {
-                MoveKey3.MovingTheKey = true;
+                MoveKey4.MovingTheKey = true;
           //  }
 
 
@@ -24,7 +24,7 @@ public class Key3 : MonoBehaviour
         {
             //if (keyName == "Triangle")
            // {
-                MoveKey3.MovingTheKey2 = true;
+                MoveKey4.MovingTheKey2 = true;
          //   }
 
         }

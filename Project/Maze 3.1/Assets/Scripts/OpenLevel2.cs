@@ -50,13 +50,16 @@ public class OpenLevel2 : MonoBehaviour {
 				GameObject.Find("Lock02").GetComponent<SpriteRenderer>().enabled = false;
 				GameObject.Find("Level2Door").GetComponent<MeshRenderer>().enabled = false;
 				GameObject.Find("Level2Door").GetComponent<BoxCollider2D>().enabled = false;
+				GameObject.Find("Level01.1").GetComponent<SpriteRenderer>().enabled = false;
 				GameObject.Find("BlackCover02.5").GetComponent<SpriteRenderer>().enabled = true;
 				GameObject.Find("Lock02.5").GetComponent<SpriteRenderer>().enabled = true;
+
 			}
 		}
 		if (player != null || player2 != null) {
 			if (keyName == "End1") {
 				Debug.Log("End1");
+				GameObject.Find("Level01.1").GetComponent<SpriteRenderer>().enabled = false;
 				GameObject.Find("Level02").GetComponent<SpriteRenderer>().enabled = true;
 				GameObject.Find("BlackCover02").GetComponent<SpriteRenderer>().enabled = false;
 				GameObject.Find("Lock02").GetComponent<SpriteRenderer>().enabled = false;
