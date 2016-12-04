@@ -10,7 +10,7 @@ public class UsingKey4 : MonoBehaviour
 		MoveKey4 key1 = otherCollider.gameObject.GetComponent<MoveKey4>();
 		if (key1 != null)
 		{
-			MoveKey.MovingTheKey = false;
+			MoveKey4.MovingTheKey = false;
 			GameObject.Find("Door18").GetComponent<MeshRenderer>().enabled = false;
 			GameObject.Find("Door18").GetComponent<BoxCollider2D>().enabled = false;
 			useTheKey = false;

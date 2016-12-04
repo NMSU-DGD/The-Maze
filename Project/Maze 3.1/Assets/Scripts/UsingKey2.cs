@@ -10,7 +10,7 @@ public class UsingKey2 : MonoBehaviour
         MoveKey2 key1 = otherCollider.gameObject.GetComponent<MoveKey2>();
         if (key1 != null)
         {
-            MoveKey.MovingTheKey = false;
+            MoveKey2.MovingTheKey = false;
             KeyCounterScript.score -= 1;
             GameObject.Find("Door04").GetComponent<MeshRenderer>().enabled = false;
             GameObject.Find("Door04").GetComponent<BoxCollider2D>().enabled = false;

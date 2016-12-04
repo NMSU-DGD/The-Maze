@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\DrawLine.cs" />
      <Compile Include="Assets\Scripts\DrawRectangle.cs" />
      <Compile Include="Assets\Scripts\EnterMinimap.cs" />
+     <Compile Include="Assets\Scripts\HoldingKeyCollider.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\ItemData.cs" />
      <Compile Include="Assets\Scripts\ItemDatabase.cs" />
@@ -64,6 +65,8 @@
      <Compile Include="Assets\Scripts\Key2.cs" />
      <Compile Include="Assets\Scripts\Key3.cs" />
      <Compile Include="Assets\Scripts\Key4.cs" />
+     <Compile Include="Assets\Scripts\Key5.cs" />
+     <Compile Include="Assets\Scripts\Key6.cs" />
      <Compile Include="Assets\Scripts\KeyCounterScript.cs" />
      <Compile Include="Assets\Scripts\KeyData.cs" />
      <Compile Include="Assets\Scripts\KeyDoorScript.cs" />
@@ -73,6 +76,8 @@
      <Compile Include="Assets\Scripts\MoveKey2.cs" />
      <Compile Include="Assets\Scripts\MoveKey3.cs" />
      <Compile Include="Assets\Scripts\MoveKey4.cs" />
+     <Compile Include="Assets\Scripts\MoveKey5.cs" />
+     <Compile Include="Assets\Scripts\MoveKey6.cs" />
      <Compile Include="Assets\Scripts\Movement2D.cs" />
      <Compile Include="Assets\Scripts\OpenLevel2.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
@@ -90,6 +95,8 @@
      <Compile Include="Assets\Scripts\UsingKey2.cs" />
      <Compile Include="Assets\Scripts\UsingKey3.cs" />
      <Compile Include="Assets\Scripts\UsingKey4.cs" />
+     <Compile Include="Assets\Scripts\UsingKey5.cs" />
+     <Compile Include="Assets\Scripts\UsingKey6.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
@@ -97,7 +104,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>/Users/Sultan/The-Maze/Project/Maze 3.1/Assets/Plugins/LitJson.dll</HintPath>
+ <HintPath>/Users/torresruth/The-Maze/Project/Maze 3.1/Assets/Plugins/LitJson.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

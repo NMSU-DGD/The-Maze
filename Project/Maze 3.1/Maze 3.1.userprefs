@@ -1,13 +1,19 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rotateplayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UsingKey6.cs">
     <Files>
-      <File FileName="Assets/Scripts/Rotateplayer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DoorButtonScript.cs" Line="93" Column="32" />
+      <File FileName="Assets/Scripts/UsingKey6.cs" Line="22" Column="2" />
+      <File FileName="Assets/Scripts/UsingKey5.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UsingKey4.cs" Line="17" Column="19" />
+      <File FileName="Assets/Scripts/UsingKey3.cs" Line="17" Column="31" />
+      <File FileName="Assets/Scripts/UsingKey2.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/UsingKey.cs" Line="12" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/torresruth/The-Maze/Project/Maze 3.1/Assets/Scripts/HoldingKeyCollider.cs" line="24" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

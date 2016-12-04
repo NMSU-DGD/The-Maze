@@ -28,15 +28,13 @@ public class Collide : MonoBehaviour {
 			if (keyName == "t(1)")
 			{
 				KeyPad.active = false;
-				//Vector3 temp2 = new Vector3(2.27f,2.28f,0.5f);
-				//GameObject.Find ("Main Camera").GetComponent<Camera> ().transform.localScale = temp2;
-				//Vector3 temp = new Vector3(7.4f,20.0f,-2.0f);
-				//GameObject.Find ("Main Camera").GetComponent<Camera> ().transform.position -= temp;
-				//Debug.Log("Plan");
-				//GameObject.Find("Main Camera").GetComponent<Camera>().enabled = true;
-				//GameObject.Find("Planningmap").GetComponent<Camera>().enabled = false;
-			}
 
+			}
+			if (keyName == "t(2)")
+			{
+				KeyPad.active = false;
+
+			}
 		}
 
 	}
