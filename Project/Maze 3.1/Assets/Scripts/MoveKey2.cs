@@ -29,11 +29,11 @@ public class MoveKey2 : MonoBehaviour
 
         if (MovingTheKey && UsingKey2.useTheKey)
         {
-            this.gameObject.transform.position = new Vector3(avaPos.x, avaPos.y * 0.97f, avaPos.z);
+            this.gameObject.transform.position = new Vector3(avaPos.x, avaPos.y, avaPos.z);
         }
         if (MovingTheKey2 && UsingKey2.useTheKey)
         {
-            this.gameObject.transform.position = new Vector3(avaPos2.x, avaPos2.y * 0.97f, avaPos2.z);
+            this.gameObject.transform.position = new Vector3(avaPos2.x, avaPos2.y, avaPos2.z);
         }
     }
 }

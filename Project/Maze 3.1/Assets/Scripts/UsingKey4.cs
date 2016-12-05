@@ -3,14 +3,16 @@ using System.Collections;
 
 public class UsingKey4 : MonoBehaviour
 {
-
+    GameObject triangle;
 	public static bool useTheKey = true;
 	void OnTriggerEnter2D(Collider2D otherCollider)
 	{
-		MoveKey4 key1 = otherCollider.gameObject.GetComponent<MoveKey4>();
+        triangle = GameObject.Find("Triangle3");
+        MoveKey4 key1 = otherCollider.gameObject.GetComponent<MoveKey4>();
 		if (key1 != null)
 		{
-			MoveKey4.MovingTheKey = false;
+            triangle.gameObject.GetComponent<Rotateplayer>().enabled = false;
+            MoveKey4.MovingTheKey = false;
 			GameObject.Find("Door18").GetComponent<MeshRenderer>().enabled = false;
 			GameObject.Find("Door18").GetComponent<BoxCollider2D>().enabled = false;
 			useTheKey = false;

@@ -27,14 +27,12 @@ public class MoveKey6 : MonoBehaviour {
 		if (MovingTheKey && UsingKey6.useTheKey)
 		{
 
-			this.gameObject.transform.position = new Vector3(avaPos.x, avaPos.y*0.95f, avaPos.z);
-			this.gameObject.transform.rotation = theAvatar.transform.rotation;
+			this.gameObject.transform.position = new Vector3(avaPos.x, avaPos.y, avaPos.z);
 		}
 		if (MovingTheKey2 && UsingKey6.useTheKey)
 		{
 
-			this.gameObject.transform.position = new Vector3(avaPos2.x, avaPos2.y*0.95f, avaPos2.z);
-			this.gameObject.transform.rotation = theAvatar2.transform.rotation;
+			this.gameObject.transform.position = new Vector3(avaPos2.x, avaPos2.y, avaPos2.z);
 		}
 	}
 }
