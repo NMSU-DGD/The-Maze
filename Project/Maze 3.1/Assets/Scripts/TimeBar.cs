@@ -10,19 +10,23 @@ public class TimeBar : MonoBehaviour {
 	[SerializeField] private float speed;
 	public static bool Flag = false;
 	public Activate extra = null;
+	public GameObject GameOver;
 	// Update is called once per frame
 	void Update () {
 
-			if (currentAmount <= 10) {
+			if (currentAmount <= 10 && currentAmount >=0) {
 				currentAmount -= speed * Time.deltaTime;
 				Text1.GetComponent<Text> ().text = ((int)currentAmount).ToString ();
 				Text2.gameObject.SetActive (true);
 
 			} else {
-				Text2.gameObject.SetActive (false);
-				Text1.GetComponent<Text> ().text = "DONE!";
+			GameOver.active = true;	
+			Text2.gameObject.SetActive (false);
+			Text1.GetComponent<Text> ().text = "DONE!";
+			transform.parent.gameObject.AddComponent<GameOverScript>();
+				
 				//Destroy(GameObject.Find("RadialProgressBar"));
-				GameObject.FindGameObjectWithTag ("GameOver").GetComponent<Image> ().enabled = true;
+				//GameObject.FindGameObjectWithTag ("GameOver").GetComponent<Image> ().enabled = true;
 			}
 			LoadingBar.GetComponent<Image> ().fillAmount = currentAmount / 10;
 		}

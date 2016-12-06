@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\DrawRectangle.cs" />
      <Compile Include="Assets\Scripts\EnterMinimap.cs" />
      <Compile Include="Assets\Scripts\FinishLevel3.cs" />
+     <Compile Include="Assets\Scripts\GameOverScript.cs" />
      <Compile Include="Assets\Scripts\HoldingKeyCollider.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\ItemData.cs" />
@@ -109,7 +110,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>/Users/Sultan/The-Maze/Project/Maze 3.1/Assets/Plugins/LitJson.dll</HintPath>
+ <HintPath>/Users/torresruth/The-Maze/Project/Maze 3.1/Assets/Plugins/LitJson.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
