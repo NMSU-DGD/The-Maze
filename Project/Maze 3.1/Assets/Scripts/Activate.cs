@@ -10,7 +10,8 @@ public class Activate : MonoBehaviour {
 	public Color Hover;
 	public Color Original;
 	public String scene;
-
+	//public bool extraTime = false;
+	//TimeBar extra;
 	public void OnMouseEnter()
 	{
 		button.color = Hover;
@@ -23,7 +24,7 @@ public class Activate : MonoBehaviour {
 
 	public void OnMouseDown()
 	{
-		if (Code.text == "5") {//cheking if typing count number is correct
+		if (Code.text == "5") {//scheking if typing count number is correct
 			GameObject.Find("BlackCover01").GetComponent<SpriteRenderer>().enabled = false;
 			GameObject.Find("Lock01").GetComponent<SpriteRenderer>().enabled = false;
 			Debug.Log ("Correct");
@@ -33,6 +34,9 @@ public class Activate : MonoBehaviour {
 			Destroy(GameObject.FindWithTag("Door1"));
 			Destroy(GameObject.FindWithTag("Keypad"));
 			//Application.LoadLevel (scene);
+			//TimeBar.extraTime(10);
+			//add time
+
 
 		} 
 		if (Code.text == "7") {//cheking if typing count number is correct

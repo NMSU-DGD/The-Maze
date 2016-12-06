@@ -33,7 +33,7 @@ public class Timer : MonoBehaviour
 			
             targetTime -= Time.deltaTime;
             theTimer.text = targetTime.ToString("00.0");
-            timer.GetComponent<Text>().text = theTime.text +"      "+ theTimer.text;
+            //timer.GetComponent<Text>().text = theTime.text +"      "+ theTimer.text;
 
         }
 

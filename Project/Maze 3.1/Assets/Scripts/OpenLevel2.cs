@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class OpenLevel2 : MonoBehaviour {
 	PlayerMovement player;
 	PlayerMovement02 player2;
+	public GameObject canvasPrefab;
 
 	void OnTriggerEnter2D(Collider2D otherCollider)
 	{
@@ -53,6 +55,15 @@ public class OpenLevel2 : MonoBehaviour {
 				GameObject.Find("Level01.1").GetComponent<SpriteRenderer>().enabled = false;
 				GameObject.Find("BlackCover02.5").GetComponent<SpriteRenderer>().enabled = true;
 				GameObject.Find("Lock02.5").GetComponent<SpriteRenderer>().enabled = true;
+				GameObject.Find("Level02").GetComponent<SpriteRenderer>().enabled = true;
+
+
+				Destroy(GameObject.FindWithTag("TimeBar01"));
+				GameObject newCanvas = (GameObject)Instantiate (canvasPrefab, transform.position, transform.rotation);
+				GameObject.Find("Center").GetComponent<Image>().enabled = false;
+				GameObject.Find("Center").GetComponent<Image>().enabled = false;
+				GameObject.Find("Center (1)").GetComponent<Image>().enabled = true;
+				GameObject.Find("Center (2)").GetComponent<Image>().enabled = true;
 
 			}
 		}
@@ -67,6 +78,13 @@ public class OpenLevel2 : MonoBehaviour {
 				GameObject.Find("Level2Door").GetComponent<BoxCollider2D>().enabled = false;
 				GameObject.Find("BlackCover02.5").GetComponent<SpriteRenderer>().enabled = true;
 				GameObject.Find("Lock02.5").GetComponent<SpriteRenderer>().enabled = true;
+				Destroy(GameObject.FindWithTag("TimeBar01"));
+				GameObject newCanvas = (GameObject)Instantiate (canvasPrefab, transform.position, transform.rotation);
+				GameObject.Find("Center").GetComponent<Image>().enabled = false;
+				GameObject.Find("Center").GetComponent<Image>().enabled = false;
+
+				GameObject.Find("Center (1)").GetComponent<Image>().enabled = true;
+				GameObject.Find("Center (2)").GetComponent<Image>().enabled = true;
 			}
 		}
 	}

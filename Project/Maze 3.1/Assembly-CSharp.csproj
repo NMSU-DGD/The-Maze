@@ -72,6 +72,7 @@
      <Compile Include="Assets\Scripts\KeyData.cs" />
      <Compile Include="Assets\Scripts\KeyDoorScript.cs" />
      <Compile Include="Assets\Scripts\KeyPadSystem.cs" />
+     <Compile Include="Assets\Scripts\Loading.cs" />
      <Compile Include="Assets\Scripts\MoveBox.cs" />
      <Compile Include="Assets\Scripts\MoveKey.cs" />
      <Compile Include="Assets\Scripts\MoveKey2.cs" />
@@ -87,10 +88,12 @@
      <Compile Include="Assets\Scripts\PlayerMovement02.cs" />
      <Compile Include="Assets\Scripts\Rotateplayer.cs" />
      <Compile Include="Assets\Scripts\SampleMove2D.cs" />
+     <Compile Include="Assets\Scripts\SceneLoader.cs" />
      <Compile Include="Assets\Scripts\ScoreScript.cs" />
      <Compile Include="Assets\Scripts\SimpleMove2D2.cs" />
      <Compile Include="Assets\Scripts\Slot.cs" />
      <Compile Include="Assets\Scripts\SlotKey.cs" />
+     <Compile Include="Assets\Scripts\TimeBar.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\Tooltip.cs" />
      <Compile Include="Assets\Scripts\UsingKey.cs" />

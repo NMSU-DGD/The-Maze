@@ -7,7 +7,7 @@ public class EnterMinimap : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D otherCollider)
 	{
-		GameObject.Find("Canvas (1)").GetComponent<Canvas>().enabled = false;
+		GameObject.Find("Level2Canvas").GetComponent<Canvas>().enabled = false;
 		string keyName = gameObject.name;
 		SampleMove2D player = otherCollider.gameObject.GetComponent<SampleMove2D>();
 		if (player != null) {
@@ -42,7 +42,7 @@ public class EnterMinimap : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D otherCollider)
 	{
-		GameObject.Find("Canvas (1)").GetComponent<Canvas>().enabled = true;
+		GameObject.Find("Level2Canvas").GetComponent<Canvas>().enabled = true;
 		string keyName = gameObject.name;
 		SimpleMove2D2 player2 = otherCollider.gameObject.GetComponent<SimpleMove2D2>();
 		if (player2 != null) {

@@ -22,12 +22,21 @@ public class SampleMove2D : MonoBehaviour
 //			mvnt.SmoothGridMove(Vector2.right, Distance, false);
 //		}
 
+//		//if (Input.GetKeyDown (KeyCode.Space)) {
+//			GameObject.Find("Canvas (1)").GetComponent<Canvas>().enabled = false;
+//			Vector3 temp1 = new Vector3(7.4f,20.0f,-2.0f);
+//			Debug.Log("Plan");
+//			GameObject.Find ("Main Camera 01").GetComponent<Camera> ().transform.position += temp1;
+//			GameObject.Find("Planningmap").GetComponent<Camera>().enabled = true;
+//		//}
+
+
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			GameObject.Find("Canvas (1)").GetComponent<Canvas>().enabled = false;
-			Vector3 temp = new Vector3(7.4f,20.0f,-2.0f);
-			Debug.Log("Plan");
-			GameObject.Find ("Main Camera 01").GetComponent<Camera> ().transform.position += temp;
-			GameObject.Find("Planningmap").GetComponent<Camera>().enabled = true;
+		GameObject.Find("Canvas (1)").GetComponent<Canvas>().enabled = false;
+		Vector3 temp = new Vector3(7.4f,20.0f,-2.0f);
+		Debug.Log("Plan");
+		GameObject.Find ("Main Camera 01").GetComponent<Camera> ().transform.position += temp;
+		GameObject.Find("Planningmap").GetComponent<Camera>().enabled = true;
 		}
 
 		if (Input.GetKeyUp (KeyCode.Space)) {
