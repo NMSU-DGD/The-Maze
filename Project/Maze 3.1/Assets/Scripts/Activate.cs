@@ -44,7 +44,18 @@ public class Activate : MonoBehaviour {
 			Destroy(GameObject.FindWithTag("Keypad"));
 			//Application.LoadLevel (scene);
 
-		} else { //if code is incorrect
+		}
+		if (Code.text == "2") {//cheking if typing count number is correct
+			Debug.Log ("Correct");
+			PlayerMovement player = gameObject.GetComponent<PlayerMovement> ();
+			PlayerMovement02 player2 = gameObject.GetComponent<PlayerMovement02> ();
+			Debug.Log("ok");
+			Destroy(GameObject.FindWithTag("Door19"));
+			Destroy(GameObject.FindWithTag("Keypad"));
+			//Application.LoadLevel (scene);
+
+		}
+		else { //if code is incorrect
 
 			Code.text = "";
 			KeyPadSystem.MaxNumbers = 0;

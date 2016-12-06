@@ -1,77 +1,38 @@
 ﻿using UnityEngine;
-using System.Collections;
 
+/// <summary>
+/// Player controller and behavior
+/// </summary>
 public class Box : MonoBehaviour
 {
+	/// <summary>
+	/// 1 - The speed of the ship
+	/// </summary>
+	public Vector2 speed = new Vector2(10, 10);
 
-	public static bool displayMessage=false;
-	public GUIStyle guiStyle=new GUIStyle();
-	public int p;
+	// 2 - Store the movement and the component
+	private Vector2 movement;
+	private Rigidbody2D rigidbodyComponent;
 
-	public void Update()  
+	void Update()
 	{
-		if (Input.GetKeyDown (KeyCode.P) && p==1) 
-		{
-			//addingTheKey (1001);
-			MoveBox.MovingTheKey = true;
-			//MoveKey.MovingTheKey2 = true;
-			displayMessage = false;
-		}
-		if (Input.GetKeyDown (KeyCode.P) && p==2) 
-		{
-			//addingTheKey (1001);
-			//MoveKey.MovingTheKey = true;
-			MoveBox.MovingTheKey2 = true;
-			displayMessage = false;
-		}
+		// 3 - Retrieve axis information
+		float inputX = Input.GetAxis("Horizontal02");
+		float inputY = Input.GetAxis("Vertical02");
 
-		if (Input.GetKeyUp (KeyCode.P)) 
-		{
-			displayMessage = false;
-		}
-		if (Input.GetKeyUp (KeyCode.R)) 
-		{
-			MoveBox.MovingTheKey2 = false;
-			MoveBox.MovingTheKey = false;
-		}
+		// 4 - Movement per direction
+		movement = new Vector2(
+			speed.x * inputX,
+			speed.y * inputY);
+
 	}
 
-	public void OnGUI()
+	void FixedUpdate()
 	{
-		if (displayMessage) {
-			guiStyle.fontSize =20;
-			guiStyle.normal.textColor = Color.white;
-			GUI.Label (new Rect (Screen.width / 2, Screen.height / 2, 200f, 200f), ("Press 'P' to grab the Box"), guiStyle);
-		}
-	} 
+		// 5 - Get the component and store the reference
+		if (rigidbodyComponent == null) rigidbodyComponent = GetComponent<Rigidbody2D>();
 
-	void OnTriggerEnter2D(Collider2D otherCollider)
-	{
-		//string keyName = this.gameObject.name;
-		PlayerMovement player = otherCollider.gameObject.GetComponent<PlayerMovement>();
-		PlayerMovement02 player2 = otherCollider.gameObject.GetComponent<PlayerMovement02>();
-
-		if (player != null)
-		{
-			//  if (keyName == "Triangle")
-			//  {
-			displayMessage = true;
-			p = 1;
-			MoveBox.MovingTheKey = true;
-			//  }
-
-
-		}
-
-		if (player2 != null)
-		{
-			//if (keyName == "Triangle")
-			// {
-			displayMessage = true;
-			p = 2;
-			MoveBox.MovingTheKey2 = true;
-			//   }
-
-		}
+		// 6 - Move the game object
+		rigidbodyComponent.velocity = movement;
 	}
 }

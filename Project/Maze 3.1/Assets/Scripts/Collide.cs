@@ -35,6 +35,11 @@ public class Collide : MonoBehaviour {
 				KeyPad.active = false;
 
 			}
+			if (keyName == "t(3)")
+			{
+				KeyPad.active = false;
+
+			}
 		}
 
 	}
