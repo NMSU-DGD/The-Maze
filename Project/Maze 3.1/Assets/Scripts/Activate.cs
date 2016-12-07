@@ -10,8 +10,15 @@ public class Activate : MonoBehaviour {
 	public Color Hover;
 	public Color Original;
 	public String scene;
+	public GameObject KeyPad = null;
+	GameObject theHolder;
 	//public bool extraTime = false;
 	//TimeBar extra;
+
+	void Start()
+	{
+		theHolder = GameObject.Find ("Holder");
+	}
 	public void OnMouseEnter()
 	{
 		button.color = Hover;
@@ -32,11 +39,12 @@ public class Activate : MonoBehaviour {
 			PlayerMovement02 player2 = gameObject.GetComponent<PlayerMovement02> ();
 			Debug.Log("ok");
 			Destroy(GameObject.FindWithTag("Door1"));
-			Destroy(GameObject.FindWithTag("Keypad"));
+			Destroy(GameObject.FindWithTag("keypad1"));
+			theHolder.active = false;
+			//Destroy(GameObject.FindWithTag("Keypad"));
 			//Application.LoadLevel (scene);
 			//TimeBar.extraTime(10);
 			//add time
-
 
 		} 
 		if (Code.text == "7") {//cheking if typing count number is correct
@@ -45,7 +53,11 @@ public class Activate : MonoBehaviour {
 			PlayerMovement02 player2 = gameObject.GetComponent<PlayerMovement02> ();
 			Debug.Log("ok");
 			Destroy(GameObject.FindWithTag("Door17"));
-			Destroy(GameObject.FindWithTag("Keypad"));
+		//	KeyPad.active = false;
+		//	Debug.Log ("SULTAN ALHARTHI");
+			Destroy(GameObject.FindWithTag("keypad2"));
+			theHolder.active = false;
+			//Destroy(GameObject.FindWithTag("Keypad"));
 			//Application.LoadLevel (scene);
 
 		}
@@ -55,7 +67,10 @@ public class Activate : MonoBehaviour {
 			PlayerMovement02 player2 = gameObject.GetComponent<PlayerMovement02> ();
 			Debug.Log("ok");
 			Destroy(GameObject.FindWithTag("Door19"));
-			Destroy(GameObject.FindWithTag("Keypad"));
+			//KeyPad.active = false;
+			Destroy(GameObject.FindWithTag("keypad3"));
+			theHolder.active = false;
+			//Destroy(GameObject.FindWithTag("Keypad"));
 			//Application.LoadLevel (scene);
 
 		}

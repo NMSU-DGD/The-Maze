@@ -28,6 +28,7 @@ public class Collide : MonoBehaviour {
 			if (keyName == "t(1)")
 			{
 				KeyPad.active = false;
+				Debug.Log ("Ruth");
 
 			}
 			if (keyName == "t(2)")
