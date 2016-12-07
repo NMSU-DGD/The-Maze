@@ -2,37 +2,49 @@
 {
  "id": 0,
  "title": "info 1",
- "description": "INFO 1",
+ "description": "Collect and use the different shapes to open some doors",
  "slug": "infoIcon"
 },
 {
  "id": 1,
  "title": "info 2",
- "description": "INFO 2",
+ "description": "There are two ways to finish the level",
  "slug": "infoIcon"
 },
 {
 "id": 2,
  "title": "info 3",
- "description": "INFO 3",
+ "description": "5735",
  "slug": "infoIcon"
 },
 {
 "id": 3,
  "title": "info 4",
- "description": "INFO 4",
+ "description": "2340",
  "slug": "infoIcon"
 },
 {
 "id": 4,
  "title": "info 5",
- "description": "INFO 5",
+ "description": "Press two buttons to open the door",
  "slug": "infoIcon"
 },
 {
 "id": 5,
  "title": "info 6",
- "description": "INFO 6",
+ "description": "Use the cubes",
+ "slug": "infoIcon"
+},
+{
+"id": 6,
+ "title": "info 7",
+ "description": "15",
+ "slug": "infoIcon"
+},
+{
+"id": 7,
+ "title": "info 8",
+ "description": "60",
  "slug": "infoIcon"
 }
 ]

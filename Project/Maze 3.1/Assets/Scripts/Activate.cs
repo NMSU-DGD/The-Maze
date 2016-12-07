@@ -31,7 +31,7 @@ public class Activate : MonoBehaviour {
 
 	public void OnMouseDown()
 	{
-		if (Code.text == "5") {//scheking if typing count number is correct
+		if (Code.text == "5735") {//scheking if typing count number is correct
 			GameObject.Find("BlackCover01").GetComponent<SpriteRenderer>().enabled = false;
 			GameObject.Find("Lock01").GetComponent<SpriteRenderer>().enabled = false;
 			Debug.Log ("Correct");
@@ -47,7 +47,7 @@ public class Activate : MonoBehaviour {
 			//add time
 
 		} 
-		if (Code.text == "7") {//cheking if typing count number is correct
+		if (Code.text == "2340") {//cheking if typing count number is correct
 			Debug.Log ("Correct");
 			PlayerMovement player = gameObject.GetComponent<PlayerMovement> ();
 			PlayerMovement02 player2 = gameObject.GetComponent<PlayerMovement02> ();
@@ -61,7 +61,7 @@ public class Activate : MonoBehaviour {
 			//Application.LoadLevel (scene);
 
 		}
-		if (Code.text == "2") {//cheking if typing count number is correct
+		if (Code.text == "1560") {//cheking if typing count number is correct
 			Debug.Log ("Correct");
 			PlayerMovement player = gameObject.GetComponent<PlayerMovement> ();
 			PlayerMovement02 player2 = gameObject.GetComponent<PlayerMovement02> ();

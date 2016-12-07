@@ -6,7 +6,7 @@ public class DoorButtonScript : MonoBehaviour {
 
 	PlayerMovement player;
 	PlayerMovement02 player2;
-	MoveBox box;
+	Box box;
 
 	bool d41 = false;
 	void FixedUpdate()
@@ -22,7 +22,7 @@ public class DoorButtonScript : MonoBehaviour {
 		string keyName = gameObject.name;
 		player = otherCollider.gameObject.GetComponent<PlayerMovement>();
 		player2 = otherCollider.gameObject.GetComponent<PlayerMovement02>();
-		box = otherCollider.gameObject.GetComponent<MoveBox>();
+		box = otherCollider.gameObject.GetComponent<Box>();
 
 		if (player != null || player2 != null|| box!=null) {
 			if (keyName == "DoorButton")
@@ -62,7 +62,7 @@ public class DoorButtonScript : MonoBehaviour {
 		string keyName = gameObject.name;
 		player = otherCollider.gameObject.GetComponent<PlayerMovement>();
 		player2 = otherCollider.gameObject.GetComponent<PlayerMovement02>();
-		box = otherCollider.gameObject.GetComponent<MoveBox>();
+		box = otherCollider.gameObject.GetComponent<Box>();
 
 		Debug.Log(player);
 		if (player != null || player2 != null|| box!=null) {

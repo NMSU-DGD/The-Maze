@@ -42,6 +42,14 @@ public class CollectingInfo : MonoBehaviour {
             {
                 addingTheInfo(5);
             }
+            else if (infoName == "info7")
+            {
+                addingTheInfo(6);
+            }
+            else if (infoName == "info8")
+            {
+                addingTheInfo(7);
+            }
         }
 
     }
