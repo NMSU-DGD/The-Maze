@@ -2,37 +2,37 @@
 {
  "id": 0,
  "title": "info 1",
- "description": "door code. Part1: 5",
+ "description": "INFO 1",
  "slug": "infoIcon"
 },
 {
  "id": 1,
  "title": "info 2",
- "description": "door code. Part2: 7",
+ "description": "INFO 2",
  "slug": "infoIcon"
 },
 {
 "id": 2,
  "title": "info 3",
- "description": "Collect this key",
+ "description": "INFO 3",
  "slug": "infoIcon"
 },
 {
 "id": 3,
  "title": "info 4",
- "description": "Two shapes is better than one",
+ "description": "INFO 4",
  "slug": "infoIcon"
 },
 {
 "id": 4,
  "title": "info 5",
- "description": "there are two way to finsish this level",
+ "description": "INFO 5",
  "slug": "infoIcon"
 },
 {
-"id": 1001,
- "title": "testKey",
- "description": "Key to open a door",
+"id": 5,
+ "title": "info 6",
+ "description": "INFO 6",
  "slug": "infoIcon"
 }
 ]
