@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.Networking;
 
 public class CollectingInfo : MonoBehaviour {
 
@@ -50,7 +49,7 @@ public class CollectingInfo : MonoBehaviour {
     void addingTheInfo(int id)
     {
         addInfo.AddItem(id);
-        Destroy(gameObject);
+		Destroy(gameObject);
     }
 }
 

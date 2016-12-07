@@ -25,8 +25,8 @@ public class TimeBar : MonoBehaviour {
 			Text1.GetComponent<Text> ().text = "DONE!";
 			transform.parent.gameObject.AddComponent<GameOverScript>();
 				
-				//Destroy(GameObject.Find("RadialProgressBar"));
-				//GameObject.FindGameObjectWithTag ("GameOver").GetComponent<Image> ().enabled = true;
+				Destroy(GameObject.Find("RadialProgressBar"));
+				GameObject.FindGameObjectWithTag ("GameOver").GetComponent<Image> ().enabled = true;
 			}
 			LoadingBar.GetComponent<Image> ().fillAmount = currentAmount / 180;
 		}

@@ -2,7 +2,6 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.Networking;
 
 public class Inventory : MonoBehaviour 
 {
@@ -29,8 +28,6 @@ void Start()
             slots[i].GetComponent<Slot>().id = i;
 			slots[i].transform.SetParent(slotPanel.transform);
 		}
-		//AddItem (1);
-		//AddItem (0);
     }
 
 	public void AddItem(int id)
