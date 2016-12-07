@@ -14,7 +14,7 @@ public class TimeBar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-			if (currentAmount <= 10 && currentAmount >=0) {
+			if (currentAmount <= 180 && currentAmount >=0) {
 				currentAmount -= speed * Time.deltaTime;
 				Text1.GetComponent<Text> ().text = ((int)currentAmount).ToString ();
 				Text2.gameObject.SetActive (true);
@@ -28,7 +28,7 @@ public class TimeBar : MonoBehaviour {
 				//Destroy(GameObject.Find("RadialProgressBar"));
 				//GameObject.FindGameObjectWithTag ("GameOver").GetComponent<Image> ().enabled = true;
 			}
-			LoadingBar.GetComponent<Image> ().fillAmount = currentAmount / 10;
+			LoadingBar.GetComponent<Image> ().fillAmount = currentAmount / 180;
 		}
 
 	public void extraTime(int bonus){

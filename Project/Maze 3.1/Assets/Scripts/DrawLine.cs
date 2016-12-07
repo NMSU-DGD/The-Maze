@@ -26,7 +26,7 @@ public class DrawLine : MonoBehaviour {
 		line.material = new Material (Shader.Find ("Particles/Additive"));
 		line.SetVertexCount (0);
 		line.SetWidth (0.1f, 0.1f);
-		line.SetColors (Color.green, Color.green);
+		line.SetColors (Color.gray, Color.gray);
 
 		line.useWorldSpace = true;
 		isMousePressed = false;
@@ -42,13 +42,13 @@ public class DrawLine : MonoBehaviour {
 				if (Input.GetMouseButtonUp (0)) {
 					//Debug.Log ("mouseup");
 					isMousePressed = false;
-					line.SetColors (Color.red, Color.red);
+				line.SetColors (Color.gray, Color.gray);
 				}
 
 				if (Input.GetMouseButtonDown (0)) {
 					isMousePressed = true;
 					line.SetVertexCount (0);
-					line.SetColors (Color.green, Color.green);
+				line.SetColors (Color.gray, Color.gray);
 				}
 
 				if (Input.GetMouseButtonDown (1)) {
